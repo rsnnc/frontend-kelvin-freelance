@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+html {
+    width: 100%;
+    position: relative;
+    overflow-y: scroll;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: black;
+}
+
+.container {
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #F1F1F1;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 46px 0 0 0;
+    .header-logo {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1;
+        position: relative;
+        padding: 0 12px 3px 0;
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 8px;
+            height: 8px;
+            background-color: #FDA300;
+            bottom: 0;
+            right: 0;
+            border-radius: 50%;
+        }
+    }
+    .header-nav {
+        animation: blink 1500ms linear 0s 1;
+        ul {
+            display: flex;
+            column-gap: 30px;
+            li {
+                a {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: auto;
+                    color: black;
+                }
+                a.active {
+                    color: #606060;
+                }
+            }
+        }
+    }
+    @keyframes blink {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+.header-hero {
+    display: flex;justify-content: space-between;flex-wrap: wrap;
+    margin-top: 82px;
+    .title-text {
+        margin-top: 124px;
+        max-width: 500px;
+        h1 {
+            font-weight: 600;
+            font-size: 44px;
+            line-height: auto;
+            margin-bottom: 20px;
+        }
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 2;
+        }
+    }
+}
+
+.services {
+    background-color: #E5E5E5;
+}
+
+
+.services-row {
+    padding: 80px 0 90px 0;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 30px;
+    .service-item {
+        h1 {
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: auto;
+            margin: 32px 0 17px;
+        }
+        p {
+            line-height: 2;
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+}
+
+.portfolio {
+    background-color: #F1F1F1;
+}
+
+.portfolio-content {
+    padding-top: 92px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    row-gap: 89px;
+    h1 {
+        font-weight: 600;
+        font-size: 34px;
+        
+    }
+    .portfolio-item {
+        a {
+            display: block;
+            color: black;
+            text-decoration: underline;
+            font-weight: 400;
+            font-size: 18px;
+            margin-top: 40px;
+        }
+        &:last-child {
+            a {
+                margin-bottom: 89px;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: #E5E5E5;
+}
+
+.footer-content {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 92px 0;
+    h1 {
+        font-weight: 600;
+        font-size: 34px;
+        margin-bottom: 46px;
+    }
+    p {
+        font-weight: 400;
+        font-size: 18px;
+        margin-bottom: 38px;
+        &:last-of-type {
+            font-size: 14px;
+            color: #828282;
+            margin-bottom: 0;
+            a {
+                color: #828282;
+                text-decoration: none;
+            }
+        }
+    }
+    .btn {
+        margin-bottom: 60px;
+        color: white;
+        width: 70%;
+        height: 42px;
+        background-color: black;
+        border: 1px solid black;
+        border-radius: 20px;
+        font-size: 18px;
+    }
+    .footer-logo-list {
+        display: flex;
+        column-gap: 30px;
+        justify-content: center;
+        margin-bottom: 42px;
+    }
+}

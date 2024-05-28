@@ -1,0 +1,34 @@
+@media (max-width: 1053px) {
+    .header-hero {
+        text-align: center;
+        margin-top: 50px;
+        justify-content: center;
+    }
+    .header-hero .title-text {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 824px) {
+    .services-row {
+        row-gap: 66px;
+        flex-wrap: wrap;
+        min-width: 315px;
+    }
+    .portfolio-content {
+        padding-top: 60px;
+    }
+    .footer-content {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 560px) {
+    .container {
+        width: 500px;
+    }
+    body {
+        width: 560px;
+    }
+
+}
